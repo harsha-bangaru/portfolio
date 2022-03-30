@@ -89,8 +89,8 @@ li > button {
     font-size: larger;
 
 }
-
 .card {
+    align-items: center;
     width:100%;
     margin: auto;
     height: 500px;
@@ -100,28 +100,25 @@ li > button {
     background-color: rgba(23, 22, 22, 0.783);
 }
 
-.collapse {
-    align-items: left;
-}
 .card-body {
-    justify-items: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
     text-align: left;
+    column-gap: 100px;
 }
+
 .card-title {
-    border-bottom: 10px;
-    border-color: white;
+    padding-top: 10px;;
 }
 
 
 .results {
     text-align: left;
     font-style: italic;
-}
 
-.carousel{
-    align-items: right;
 }
-
 
 .carousel-item {
     width: auto;
