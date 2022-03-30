@@ -5,7 +5,7 @@ background-position: bottom;
 height: 200px;
 background-size: cover;
 padding:0px;
-width: 1200px;
+width: 1000px;
 margin: auto;
 position: relative;
 }
@@ -31,6 +31,10 @@ li > a {
     color: white;
 }
 
+#planes, #applications, #drones {
+    width: 200px;
+}
+
 body{
     background-color:rgba(0, 0, 0, 0.913);
     color: white;
@@ -40,61 +44,84 @@ body{
 .wrapper {
     display: flex;
     align-items: flex-start;
-    width: 1200px;
+    width: 1000px;
     margin: auto;
   }
-  .sidebar {
-    position: sticky;
-    top: 5%;
-    border-right-style:solid;
-    border-right-width: 3px;
-    border-right-color:rgb(94, 92, 92);
-    top: 210px;
-    padding-top: 8px;
-    font-style: italic;
-    font: #ffffff;
-    width: 200px;
-    margin-left: auto;
-  }
+.sidebar {
+position: sticky;
+top: 5%;
+border-right-style:solid;
+border-right-width: 3px;
+border-right-color:rgb(94, 92, 92);
+padding-top: 20px;
+font-style: italic;
+font: #ffffff;
+width: 20%;
+margin-left: auto;
+}
 
- /*Main content */
- .content {
-     width: 1000px;
-     margin: auto;
-     padding-left: 20px;
+/*Main content */
+.content {
+    width: 80%;
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 20px;
 
- }
+}
 
-
-
-#planes > a, #drones > a, #applications > a{
-    width: 1000px;
+li > button {
     color: white;
-    background-color: rgba(23, 22, 22, 0.783);
-    border-color:  white;
+    background-color: rgba(0,0,0,.000001);
+    border: none;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
 }
 
-.card_title {
-    color: black;
-}
 
 .btn {
     background-color: rgba(23, 22, 22, 0.783);
     color:  white;
     border: none;
+    width: 770px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: larger;
 
 }
 
 .card {
-    align-items: center;
-    width:50%;
-    min-width: 200px;
+    width:100%;
+    margin: auto;
     height: 500px;
     overflow: hidden;
     position: relative;
     background-size: contain;
     background-color: rgba(23, 22, 22, 0.783);
 }
+
+.collapse {
+    align-items: left;
+}
+.card-body {
+    justify-items: left;
+    text-align: left;
+}
+.card-title {
+    border-bottom: 10px;
+    border-color: white;
+}
+
+
+.results {
+    text-align: left;
+    font-style: italic;
+}
+
+.carousel{
+    align-items: right;
+}
+
 
 .carousel-item {
     width: auto;
@@ -113,13 +140,3 @@ body{
 .collapse {
     background-color: rgba(28, 27, 27, 0.783);
 }
-  
-  .main {
-    max-width: 2000px;
-    padding: 10px;
-    display: inline-block;
-    position: relative;
-    padding: 10px;
-    min-width: 800px;
-    max-width: 2000px;
-  }
