@@ -2,13 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1000px">
     <title>Harsha's Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
-<body id="hello" onload="test()">
+<body id="hello">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -18,42 +18,12 @@
         </h1>
     </div>
     <script>
-        function myFunction() {
-            const element = document.getElementById("application");
-            if ($('#application').collapse()) {
-                $("#application").css("data-toggle", "collapse-in");
-                element.scrollIntoView(false);
+        function slideToProjects(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains("collapse")) {
+                $(`#${id}`).collapse("show");
             }
-            else {
-                $("#application").css("data-toggle", "collapse");
-            }
-            
-        }
-        function myFunction1() {
-            const element = document.getElementById("plane");
-            if ($('#plane').collapse()) {
-                $("#plane").css("data-toggle", "collapse-in");
-                element.scrollIntoView(false);
-            }
-            else {
-                $("#plane").css("data-toggle", "collapse");
-            }
-        }
-        function myFunction2() {
-            const element = document.getElementById("drone");
-            if ($('#drone').collapse()) {
-                $("#drone").css("data-toggle", "collapse-in");
-                element.scrollIntoView(false);
-            }
-            else {
-                $("#drone").css("data-toggle", "collapse");
-            }
-        }
-
-        function test() {
-            $(".sidebar").css("visibility", "hidden");
-
-            $(".sidebar").css("visibility", "visible");
+            document.getElementById(`${id}s`).scrollIntoView({behavior: "smooth", block: "start", inline: "center"});
         }
     </script>
     <!--Left bar-->
@@ -64,12 +34,12 @@
                 <br>
                 <li><a href="#Project"> Projects</a></li>
                 <br>
-                <ul style="list-style-type:none;">
-                    <li><button href="#application" onclick="myFunction()"> Applications</button></li>
+                <ul class="subMenu" style="list-style-type:none;">
+                    <li><button href="#application" onclick="slideToProjects('application')"> Applications</button></li>
                     <br>
-                    <li><button href="#plane" onclick="myFunction1()"> Planes</button></li>
+                    <li><button href="#plane" onclick="slideToProjects('plane')"> Planes</button></li>
                     <br>
-                    <li><button href="#drone" onclick="myFunction2()"> Drones</button></li>
+                    <li><button href="#drone" onclick="slideToProjects('drone')"> Drones</button></li>
                 </ul>
             </ul>
         </div>
@@ -80,17 +50,16 @@
                 a winner of multiple kahoot games<br>
             </p>
             <br>
-            <hr style="color: gray; border: solid; width: 800px">
+            <br>
             <!--Projects section-->
-            <h3 id="Project">I made...</h3><br>
-            <div>
+            <h3 id="Project">I made...</h3>
                 <p id="applications">
-                    <a style="font-size: larger;" class="btn btn-primary" data-toggle="collapse" href="#application" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#application" role="button" aria-expanded="false" aria-controls="collapseExample">
                         Applications
                     </a>
                 </p>
                 <div class="collapse" id="application">
-                    <div class="card" style="width: 100%; text-align: center;">
+                    <div class="card">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -116,12 +85,12 @@
                             <h4 class="card-title">Knightmobile!</h4>
                             <p class="card-text">First plane I ever built! Modeled after the B2 Flying wing. <br>
                             </p>
+                            <p class="results">Technologies used: Solidworks, Microsoft Excel, MATLAB, InkScape</p>
                         </div>
                     </div>
                 </div>
-                <hr style="color:rgba(177, 169, 169, .3); border: solid; width: 500px; align-content: left; ">
                 <p id="planes">
-                    <a style="font-size: larger;" class="btn btn-primary" data-toggle="collapse" href="#plane" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#plane" role="button" aria-expanded="false" aria-controls="collapseExample">
                         Planes
                     </a>
                 </p>
@@ -167,6 +136,7 @@
                             <h4 class="card-title">Knightmobile</h4>
                             <p class="card-text">Goal: Build an aircraft that can deploy and recover a working sensor mid-flight, while staying aerodynamically stable 
                                 <br> Result: Ranked 1st in the country and 2nd in the world!</p>
+                                <p class="results">Technologies used: Solidworks, Microsoft Excel, MATLAB, InkScape</p>
                         </div>
                     </div>
                     <div class="card" style="width: 100%; text-align: center;">
@@ -196,6 +166,7 @@
                         <h4 class="card-title">Flying Wing</h4>
                         <p class="card-text">First plane I ever built! Modeled after the B2 Flying wing. <br>
                             Sadly, it never got to fly but it was a great learning experience</p>
+                            <p class="results">Technologies used: Solidworks, Microsoft Excel, MATLAB, InkScape</p>
                     </div>
                 </div>
                 <div class="card" style="width: 100%; text-align: center;">
@@ -231,12 +202,12 @@
                         <h4 class="card-title">Supermarine Spitfire</h4>
                         <p class="card-text">This was modeled after the WWII fighter plane known as the supermarine spitfire <br>
                              Project was ultimately cancelled before flights could take place, due to the pandemic</p>
+                             <p class="results">Technologies used: Solidworks, Microsoft Excel, MATLAB, InkScape</p>
                     </div>
                 </div>
                 </div>
-                <hr style="color:rgba(177, 169, 169, .3); border: solid; width: 500px ">
                 <p id="drones">
-                    <a style="font-size: larger;" class="btn btn-primary" data-toggle="collapse" href="#drone" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#drone" role="button" aria-expanded="false" aria-controls="collapseExample">
                         Drones
                     </a>
                 </p>
@@ -270,6 +241,7 @@
                             <h4 class="card-title">Drone name: General Kenobi</h4>
                             <p class="card-text">First drone of mine to every fly <br>
                             ... and proceed to fall 30 feet after 30 seconds of flight (electronics short)</p>
+                            <p class="results">Technologies used: Solidworks, Microsoft Excel, MATLAB, InkScape</p>
                         </div>
                     </div>
                 </div>
