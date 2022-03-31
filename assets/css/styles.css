@@ -13,9 +13,12 @@ position: relative;
 /*
 @media screen and (max-width: 800px){ html,body {min-width:800px} }
 */
+
 .content > p {
     font-size:larger;
     width: auto;
+    padding-left: 30px;
+
 }
 
 .name {
@@ -27,12 +30,16 @@ position: relative;
     font-family: sans-serif;
 }
 
+
 li > a {
     color: white;
 }
 
 #planes, #applications, #drones {
-    width: 200px;
+    width: 770px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(19, 135, 181,.3);
 }
 
 body{
@@ -44,20 +51,22 @@ body{
 .wrapper {
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
     width: 1000px;
     margin: auto;
-  }
+    }
 .sidebar {
-position: sticky;
-top: 5%;
-border-right-style:solid;
-border-right-width: 3px;
-border-right-color:rgb(94, 92, 92);
-padding-top: 20px;
-font-style: italic;
-font: #ffffff;
-width: 20%;
-margin-left: auto;
+    position: sticky;
+    top: 5%;
+    border-right-style:solid;
+    border-right-width: 3px;
+    border-right-color:rgb(94, 92, 92);
+    padding-top: 20px;
+    font-style: italic;
+    font: #ffffff;
+    width: 20%;
+    margin-left: auto;
+    order: 1;
 }
 
 /*Main content */
@@ -66,6 +75,7 @@ margin-left: auto;
     margin: auto;
     padding-left: 20px;
     padding-top: 20px;
+    order: 2;
 
 }
 
@@ -85,10 +95,10 @@ li > button {
     border: none;
     width: 770px;
     text-align: left;
-    padding-left: 20px;
     font-size: larger;
-
 }
+
+
 .card {
     align-items: center;
     width:100%;
@@ -117,7 +127,10 @@ li > button {
 .results {
     text-align: left;
     font-style: italic;
-
+    width: 770px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(255, 255, 255, 0.9);
 }
 
 .carousel-item {
