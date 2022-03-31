@@ -10,17 +10,6 @@ margin: auto;
 position: relative;
 }
 
-/*
-@media screen and (max-width: 800px){ html,body {min-width:800px} }
-*/
-
-.content > p {
-    font-size:larger;
-    width: auto;
-    padding-left: 30px;
-
-}
-
 .name {
     position: absolute;
     top: 50%;
@@ -48,6 +37,8 @@ body{
     font-family: sans-serif;
     margin: auto;
 }
+
+/* Main Div Wrapper */
 .wrapper {
     display: flex;
     align-items: flex-start;
@@ -55,6 +46,8 @@ body{
     width: 1000px;
     margin: auto;
     }
+
+/* Sidebar content begins */
 .sidebar {
     position: sticky;
     top: 5%;
@@ -69,6 +62,16 @@ body{
     order: 1;
 }
 
+.links {
+    padding-top: 50px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.links > a {
+    color: rgb(174, 170, 170);
+}
+
 /*Main content */
 .content {
     width: 80%;
@@ -76,19 +79,16 @@ body{
     padding-left: 20px;
     padding-top: 20px;
     order: 2;
+}
+
+.content > p {
+    font-size:larger;
+    width: auto;
+    padding-left: 40px;
 
 }
 
-li > button {
-    color: white;
-    background-color: rgba(0,0,0,.000001);
-    border: none;
-    padding: 5px;
-    width: fit-content;
-    margin: auto;
-}
-
-
+/* Buttons and cards */
 .btn {
     background-color: rgba(23, 22, 22, 0.783);
     color:  white;
@@ -96,8 +96,20 @@ li > button {
     width: 770px;
     text-align: left;
     font-size: larger;
+    padding-left: 0px;
 }
 
+.btn:hover, .btn:active {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+li > button {
+    color: white;
+    background-color: rgba(0,0,0,.000001);
+    border: none;
+    margin: auto;
+}
 
 .card {
     align-items: center;
@@ -119,11 +131,6 @@ li > button {
     column-gap: 100px;
 }
 
-.card-title {
-    padding-top: 10px;;
-}
-
-
 .results {
     text-align: left;
     font-style: italic;
@@ -133,6 +140,7 @@ li > button {
     border-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Animations and slideshows */
 .carousel-item {
     width: auto;
     background-color: rgba(28, 27, 27, 0.783);
