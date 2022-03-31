@@ -55,6 +55,7 @@ body{
     border-right-width: 3px;
     border-right-color:rgb(94, 92, 92);
     padding-top: 20px;
+    padding-right: 2px;
     font-style: italic;
     font: #ffffff;
     width: 20%;
@@ -118,7 +119,7 @@ li > button {
     height: 500px;
     overflow: hidden;
     position: relative;
-    background-size: contain;
+    background-size: cover;
     background-color: rgba(23, 22, 22, 0.783);
 }
 
@@ -129,6 +130,7 @@ li > button {
     float: left;
     text-align: left;
     column-gap: 100px;
+    padding-left: 100px;
 }
 
 .results {
@@ -150,11 +152,15 @@ li > button {
 }
 
 .carousel-inner > .carousel-item {
-    backface-visibility: hidden;
-    perspective: 500px;
     transition: opacity 0.00000001s ease-in-out 0s;
 }
 
 .collapse {
     background-color: rgba(28, 27, 27, 0.783);
+}
+
+#ifCollapse {
+    visibility: hidden;
+    position: relative;
+    top: 60%;
 }
