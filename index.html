@@ -300,7 +300,7 @@
     // These two functions expand/compress the menu bar based on the window size
         $(function(){
             $(window).resize(function(){
-                if($(this).width() <= 1000){
+                if($(this).width() <= 999){
                     $(".sidebar").css("order", "2");
                     $(".content").css("order", "1");
                     $(".sidebar").css("visibility", "collapse");
@@ -313,7 +313,7 @@
 
         $(function(){
             $(window).resize(function(){
-                 if($(this).width() > 1000){
+                 if($(this).width() > 999){
                     $(".sidebar").css("visibility", "visible");
                     $(".sidebar").css("order", "1");
                     $(".content").css("order", "2");
