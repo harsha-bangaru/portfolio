@@ -146,8 +146,8 @@ li > button {
 .carousel-item {
     width: auto;
     background-color: rgba(28, 27, 27, 0.783);
+    background-size: cover;
     height: 300px;
-    background-size: contain;
     transition-delay: 100ms;
 }
 
