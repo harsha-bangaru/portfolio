@@ -17,7 +17,7 @@
             Harshavardhan Bangaru
         </h1>
         <h6 class="links" id="ifCollapse">
-            <a href="https://www.linkedin.com/in/harshavardhan-bangaru/" target="_blank">LinkedIn |</a>
+            <a href="https://www.linkedin.com/in/harshavardhan-bangaru/" target="_blank">LinkedIn </a><span style="color: grey; font-style: normal;">|</span>
             <a href="https://github.com/harsha-bangaru" target="_blank">Github</a>
         </h6>
     </div>
@@ -46,7 +46,7 @@
                 <br>
                 <li><button href="#Project" onclick="slideToMain('Project')"> Projects</button></li>
                 <br>
-                <ul class="subMenu" style="list-style-type:none;">
+                <ul style="list-style-type:none;">
                     <li><button href="#application" onclick="slideToProjects('application')"> Applications</button></li>
                     <br>
                     <li><button href="#plane" onclick="slideToProjects('plane')"> Planes</button></li>
@@ -55,7 +55,7 @@
                 </ul>
             </ul>
             <h6 class="links">
-                <a href="https://www.linkedin.com/in/harshavardhan-bangaru/" target="_blank">linkedIn |</a>
+                <a href="https://www.linkedin.com/in/harshavardhan-bangaru/" target="_blank">linkedIn</a> <span style="color: grey;font-style: normal;">|</span>
                 <a href="https://github.com/harsha-bangaru" target="_blank">Github</a>
             </h6>
         </div>
@@ -289,7 +289,7 @@
                         </a>
                     <div class="card-body">
                         <h4 class="card-title">Drone name: General Kenobi</h4>
-                        <p class="card-text">First drone of mine to every fly <br>
+                        <p class="card-text">First drone of mine to ever fly <br>
                         ... and proceed to fall 30 feet after 30 seconds of flight (electronics short)</p>
                         <p class="results">Technologies used: Solidworks, Microsoft Excel, Inkscape</p>
                     </div>
@@ -302,7 +302,7 @@
     // These two functions expand/compress the menu bar based on the window size
         $(function(){
             $(window).resize(function(){
-                if($(this).width() <= 800){
+                if($(this).width() <= 1000){
                     $(".sidebar").css("order", "2");
                     $(".content").css("order", "1");
                     $(".sidebar").css("visibility", "collapse");
@@ -315,7 +315,7 @@
 
         $(function(){
             $(window).resize(function(){
-                 if($(this).width() > 800){
+                 if($(this).width() > 1000){
                     $(".sidebar").css("visibility", "visible");
                     $(".sidebar").css("order", "1");
                     $(".content").css("order", "2");
