@@ -26,8 +26,6 @@ li > a {
 
 #planes, #applications, #drones {
     width: 770px;
-    border-top: 1px;
-    border-top-style: solid;
     border-bottom: 1px;
     border-bottom-style: solid;
     border-color: rgba(19, 135, 181,.3);
@@ -61,7 +59,7 @@ body{
     margin-right: auto;
     font-style: italic;
     font: #ffffff;
-    width: 20%;
+    width: 21%;
     margin-left: auto;
     order: 1;
 }
@@ -115,6 +113,10 @@ li > button {
     margin: auto;
 }
 
+.collapse {
+    background-color: rgba(28, 27, 27, 0.783);
+}
+
 .card {
     align-items: center;
     width:100%;
@@ -139,9 +141,9 @@ li > button {
 }
 
 .card-title {
-    border-bottom: ridge;
+    border-bottom: solid;
     border-bottom-color: rgba(255, 255, 255, 0.25);
-    border-image: linear-gradient(to right, rgb(188, 183, 183), rgb(0, 0, 0)) 1;;
+    padding-right: 300px;
 }
 
 
@@ -170,10 +172,6 @@ li > button {
 
 .carousel-inner > .carousel-item {
     transition: opacity 0.00000001s ease-in-out 0s;
-}
-
-.collapse {
-    background-color: rgba(28, 27, 27, 0.783);
 }
 
 #ifCollapse {
