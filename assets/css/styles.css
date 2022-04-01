@@ -58,6 +58,7 @@ body{
     border-right-color:rgb(94, 92, 92);
     padding-top: 20px;
     padding-right: 2px;
+    margin-right: auto;
     font-style: italic;
     font: #ffffff;
     width: 20%;
@@ -139,7 +140,6 @@ li > button {
 
 .card-title {
     border-bottom: ridge;
-    padding-right: 50%;
     border-bottom-color: rgba(255, 255, 255, 0.25);
     border-image: linear-gradient(to right, rgb(188, 183, 183), rgb(0, 0, 0)) 1;;
 }
@@ -159,8 +159,13 @@ li > button {
     width: auto;
     background-color: rgba(28, 27, 27, 0.783);
     background-size: contain;
+    object-fit: cover;
     height: 300px;
     transition-delay: 100ms;
+}
+
+.carousel-inner {
+    object-fit: contain;
 }
 
 .carousel-inner > .carousel-item {
